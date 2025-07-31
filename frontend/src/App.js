@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "./App.css";
 
 const API_URL = "http://localhost:5000/api/notes";
 
@@ -59,71 +60,6 @@ function App() {
 
   return (
     <div className="container">
-      <style>
-        {`
-          .container {
-            font-family: Arial, sans-serif;
-            padding: 2rem;
-            max-width: 700px;
-            margin: auto;
-          }
-          h1 {
-            text-align: center;
-            color: #333;
-          }
-          .error {
-            color: red;
-            margin-bottom: 1rem;
-          }
-          form {
-            background: #f9f9f9;
-            padding: 1rem;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            margin-bottom: 2rem;
-          }
-          input, textarea {
-            width: 100%;
-            padding: 0.75rem;
-            margin-bottom: 1rem;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 1rem;
-          }
-          button {
-            background: #007bff;
-            color: white;
-            padding: 0.5rem 1.25rem;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-          }
-          button:hover {
-            background: #0056b3;
-          }
-          .note {
-            border: 1px solid #ddd;
-            padding: 1rem;
-            border-radius: 5px;
-            margin-bottom: 1rem;
-            background: #fff;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-          }
-          .note h3 {
-            margin: 0 0 0.5rem 0;
-          }
-          .note p {
-            margin: 0 0 1rem 0;
-          }
-          .note button {
-            background: #dc3545;
-          }
-          .note button:hover {
-            background: #c82333;
-          }
-        `}
-      </style>
-
       <h1>Simple Notes App</h1>
       {error && <p className="error">{error}</p>}
 
